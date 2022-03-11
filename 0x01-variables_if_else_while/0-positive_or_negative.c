@@ -10,8 +10,8 @@ int main(void)
 {
 	int n;
 
-	strand(time(0))
-	n=rand() - Rand_max / 2;
+	srand(time(0))
+	n = rand() - Rand_max / 2;
 
 	if(n>0)
 		printf("%d is positive\n",n);
@@ -20,5 +20,5 @@ int main(void)
 	else
 		printf("%d is negative\n",n);
 
-	return (0)
+	return (0);
 }
