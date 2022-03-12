@@ -3,23 +3,22 @@
 #include <stdlib.h>
 
 #include <time.h>
-
 /**
+ * main - program entry point
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
+ * Return: 0 on success.Error code otherwise
  */
 int main(void)
 {
-	char low;
+	char a = 'a';
+	int n = 0;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-	        printf("\n");
-
-		return (0);
+	while (n < 26)
+	{
+		putchar(a);
+		a++;
+		n++;
+	}
+	putchar('\n');
+	return (0);
 }
