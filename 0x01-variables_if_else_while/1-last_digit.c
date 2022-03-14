@@ -7,8 +7,7 @@
  * Return: Always 0 (success)
  */
 int main(void)
-{ 
-	int n;
+{
 	int L;
 	char str[] = "Last digit of";
 
