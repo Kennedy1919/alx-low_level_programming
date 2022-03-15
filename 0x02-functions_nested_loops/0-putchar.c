@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-i/**
+/**
  * main - Entry point
  *
  * Return: Always 0 (Success)
@@ -12,7 +12,7 @@ int main(void)
 
 	while (i < 8)
 	{
-		_putchar(s[i]);
+		putchar(s[i]);
 		i++;
 	}
 	putchar('\n');
