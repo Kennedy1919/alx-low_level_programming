@@ -1,8 +1,3 @@
-/*
- * File: 1-alphabet.c
- */
-
-#include <stdio.h>
 #include "main.h"
 
 /**
