@@ -5,7 +5,7 @@
  * Description: It prints 9 times table starting with 0
  * Return: Nothing
  */
-voiid times_table(void)
+void times_table(void)
 {
 	int i, j, n;
 
