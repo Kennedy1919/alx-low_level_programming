@@ -10,3 +10,4 @@ void puts_half(char *str);
 int _atoi(char *s);
 int main(void);
 void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
