@@ -1,37 +1,26 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * main - entry point
- *
- * Return: Void
+ * main - Entry piont
+ * Return: Always 0
  */
 int main(void)
 {
-	int j = 100;
-	int i;
+	int i = 1;
 
-	i = 1;
-	while (i <= j)
+	for (; i < 100 ; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
-		{
-			prinf("FizzBuzz");
-		}
+			printf("FizzBuzz ");
 		else if (i % 3 == 0)
-		{
-			printf("Fizz");
-		}
+			printf("Fizz ");
 		else if (i % 5 == 0)
-		{
-			printf("Buzz");
-		}
+			printf("Buzz ");
 		else
-		{
-			printf("%i", i);
-		}
-		if (i != 100)
-			printf(' ');
-		i++;
+			printf("%d ", i);
 	}
-	printf('\n');
+	printf("Buzz\n");
+
 	return (0);
 }
