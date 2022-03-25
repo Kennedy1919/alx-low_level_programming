@@ -1,29 +1,22 @@
 #include "main.h"
 
 /**
- * print_triangle -  a function that prints a triangle, followed by a new line.
- * @size: An input integer
- * Return: Always 0
+ * print_triangle - print triangle of variable length
+ * @size: triangle height
  */
 void print_triangle(int size)
 {
-	int i = 0, j, n = size - 1;
+	int i, m;
 
-	if (size > 0)
-	{
-		for (; i < size; i++)
-		{
-			for (j = 0; j < size; j++)
-			{
-				if (j < n)
-					_putchar(' ');
-				else
-					_putchar('#');
-			}
-			n--;
-			_putchar('\n');
-		}
-	}
-	else
+	m = size;
+
+	if (size <= 0)
 		_putchar('\n');
+	while (size > 0)
+	{
+		for (i = 0; i < m; i++)
+			_putchar((i < size - 1) ? ' ' : '#');
+		_putchar('\n');
+		size--;
+	}
 }
