@@ -24,7 +24,7 @@ int isDelimiter(char c)
 	for (i = 0; i < 12; i++)
 		if (c == delimiter[i])
 			return (1);
-	return (0);	
+	return (0);
 }
 
 /**
@@ -36,8 +36,8 @@ char *cap_string(char *s)
 {
 	char *ptr = s;
 	int foundDelimit = 1;
-	while (*s)
 
+	while (*s)
 	{
 		if (isDelimiter(*s))
 			foundDelimit = 1;
